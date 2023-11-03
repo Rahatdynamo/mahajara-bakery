@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/search_shape"
+            android:backgroundTint="@color/light_chocolate">
+
+            <TextView
+                android:id="@+id/cd_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="cakes"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/arrow2"
+               android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/rich_plum_cake"
+            app:c_border="true"
+            android:id="@+id/Cd_imageView"
+            app:c_border_color="@color/brown" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Item_list">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/recycler_two"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+
+        android:backgroundTint="@color/brown"
+        android:background="@drawable/search_shape"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_list_no"
+            android:text="0 item"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_list_price"
+            android:text="$ 0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+       <LinearLayout
+           android:layout_width="110dp"
+           android:layout_height="40dp"
+           android:layout_gravity="center"
+           android:layout_marginLeft="50dp"
+           android:background="@drawable/view_cart_design"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="View cart"
+               android:layout_marginLeft="4dp"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:layout_gravity="center"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/my_cart"/>
+       </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

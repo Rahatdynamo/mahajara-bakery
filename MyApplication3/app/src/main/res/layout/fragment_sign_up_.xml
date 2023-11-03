@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUp_Fragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp "
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/style"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:hint=" Name*"
+        android:inputType="text"
+        android:padding="3dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginRight="20dp"
+        android:id="@+id/signUp_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint=" Email(Optional)"
+        android:padding="3dp"
+        android:id="@+id/signUp_email"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint=" Phone No*"
+        android:padding="3dp"
+        android:inputType="number"
+        android:id="@+id/signUp_phone"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint=" Password*"
+        android:padding="3dp"
+        android:id="@+id/signUp_pass"
+        android:inputType="textWebPassword"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edit_text_design"
+        android:layout_marginRight="20dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Accept T &amp; C of Maharaja Bakery"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGNUP"
+        android:textSize="20sp"
+        android:background="@drawable/loginbutton_design"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/signUp_button"/>
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/Login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
